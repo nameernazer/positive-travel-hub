@@ -13,7 +13,7 @@ const ContactPage = () => {
     
     // Preload hero image
     const heroImg = new Image();
-    heroImg.src = "/lovable-uploads/589da510-40a1-42fc-b6cc-1d64181eafdb.png";
+    heroImg.src = ""/lovable-uploads/a-photo-of-a-white-woman-wearing-a-white_DFLSgLCWRdmVnBoptt_mSA_7BC4wXYOTg2ugoIyUUaDWA.jpeg";
     heroImg.onload = () => setHeroImageLoaded(true);
   }, []);
 
