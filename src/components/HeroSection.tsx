@@ -54,7 +54,7 @@ export default function HeroSection() {
 
       <div className="relative h-screen min-h-[600px] w-full overflow-hidden">
         {/* Logo in top-left corner with placeholder */}
-        <div className="absolute top-6 left-6 z-50">
+        <div className="absolute top-5 left-6 z-50">
           <Link to="/">
             {!logoLoaded && (
               <div className="h-14 w-40 bg-gray-200 animate-pulse rounded"></div>
