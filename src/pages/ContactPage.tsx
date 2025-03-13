@@ -13,13 +13,13 @@ const ContactPage = () => {
     
     // Preload hero image
     const heroImg = new Image();
-    heroImg.src = ""/lovable-uploads/a-photo-of-a-white-woman-wearing-a-white_DFLSgLCWRdmVnBoptt_mSA_7BC4wXYOTg2ugoIyUUaDWA.jpeg";
+    heroImg.src = "/lovable-uploads/a-photo-of-a-white-woman-wearing-a-white_DFLSgLCWRdmVnBoptt_mSA_7BC4wXYOTg2ugoIyUUaDWA.jpeg";
     heroImg.onload = () => setHeroImageLoaded(true);
   }, []);
 
   return (
     <MainLayout>
-      <div className="relative h-[50vh] bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/589da510-40a1-42fc-b6cc-1d64181eafdb.png')" }}>
+      <div className="relative h-[50vh] bg-cover bg-center" style={{ backgroundImage: "url('/lovable-uploads/a-photo-of-a-white-woman-wearing-a-white_DFLSgLCWRdmVnBoptt_mSA_7BC4wXYOTg2ugoIyUUaDWA.jpeg')" }}>
         <div className="absolute inset-0 bg-black/50" />
         
         {/* Centered title with support text */}

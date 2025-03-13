@@ -55,7 +55,7 @@ export default function AboutSection() {
               />
               <div className="text-center mt-3 pb-2">
                 <p className="font-semibold text-gray-800 text-base">Nazer EP</p>
-                <p className="text-[#8E9196] font-medium text-sm">Founder</p>
+                <p className="text-[#8E9196] font-medium text-sm">CEO, Founder</p>
               </div>
             </div>
           </motion.div>
