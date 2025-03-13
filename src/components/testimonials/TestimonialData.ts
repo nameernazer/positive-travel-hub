@@ -17,7 +17,7 @@ export const testimonials: Testimonial[] = [
     location: "Dubai, UAE"
   },
   {
-    quote: "Professional, reliable, and truly exceptional service. Will definitely book with them again.",
+    quote: "Professional, reliable, and truly exceptional service. Will definitely book with Positive Travel and Holidays again!",
     author: "Ahmed Hassan",
     location: "Qatar"
   },
