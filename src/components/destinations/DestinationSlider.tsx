@@ -1,14 +1,14 @@
-
 import { useState, useRef, useEffect } from 'react';
 import { DestinationType } from './DestinationTypes';
 import { DestinationCard } from './DestinationCard';
 
 interface DestinationSliderProps {
   destinations: DestinationType[];
+  currentIndex: number;
+  setCurrentIndex: (index: number) => void;
 }
 
-export const DestinationSlider = ({ destinations }: DestinationSliderProps) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export const DestinationSlider = ({ destinations, currentIndex, setCurrentIndex }: DestinationSliderProps) => {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const sliderRef = useRef<HTMLDivElement>(null);

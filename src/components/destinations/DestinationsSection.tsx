@@ -36,7 +36,11 @@ export default function DestinationsSection() {
         </motion.div>
 
         <div className="relative">
-          <DestinationSlider destinations={destinations} />
+          <DestinationSlider 
+            destinations={destinations} 
+            currentIndex={currentIndex}
+            setCurrentIndex={setCurrentIndex}
+          />
           <SliderControls onPrevClick={prevSlide} onNextClick={nextSlide} />
         </div>
       </div>

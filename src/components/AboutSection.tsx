@@ -1,7 +1,17 @@
 
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 
 export default function AboutSection() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+  
+  useEffect(() => {
+    // Preload founder image
+    const img = new Image();
+    img.onload = () => setImageLoaded(true);
+    img.src = "/lovable-uploads/055ed8a5-e784-4b75-a8f7-78a3c59c7b54.png";
+  }, []);
+
   return (
     <section className="section-padding bg-white" id="about">
       <div className="container-custom">
@@ -29,15 +39,19 @@ export default function AboutSection() {
             className="w-full md:w-1/4 flex justify-center md:justify-start"
           >
             <div className="w-full max-w-[180px] md:max-w-[280px]">
+              {!imageLoaded && (
+                <div className="w-full aspect-square bg-gray-200 animate-pulse rounded-xl"></div>
+              )}
               <img 
                 src="/lovable-uploads/055ed8a5-e784-4b75-a8f7-78a3c59c7b54.png" 
                 alt="Nazer EP - Founder" 
-                className="w-full aspect-square object-cover rounded-xl"
+                className={`w-full aspect-square object-cover rounded-xl ${imageLoaded ? 'opacity-100' : 'opacity-0'} transition-opacity duration-300`}
                 loading="eager"
                 width="280"
                 height="280"
                 decoding="async"
                 fetchPriority="high"
+                onLoad={() => setImageLoaded(true)}
               />
               <div className="text-center mt-3 pb-2">
                 <p className="font-semibold text-gray-800 text-base">Nazer EP</p>

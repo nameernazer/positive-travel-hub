@@ -34,7 +34,8 @@ export const Navigation = ({ isMenuOpen, setIsMenuOpen }: NavigationProps) => {
           {/* Wider spacing on the left */}
           <div className="w-1/4"></div>
 
-          <div className="hidden md:flex justify-center items-center w-1/3 ml-12">
+          {/* Repositioned the Make a Call section more to the right */}
+          <div className="hidden md:flex justify-center items-center w-1/3 ml-24">
             <span className="text-white text-lg text-center">
               Make a call: +91 94974 58282
             </span>

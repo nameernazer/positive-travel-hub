@@ -16,9 +16,12 @@ const ServiceLayout = ({ children, title, description, bgImage }: ServiceLayoutP
   const [imageLoaded, setImageLoaded] = useState(false);
   
   useEffect(() => {
-    // Preload the hero image
+    // Early setup of placeholder while image loads
+    setImageLoaded(false);
+    
+    // Preload the hero image with priority
     const img = new Image();
-    img.src = `${bgImage}?auto=format&w=1200&q=60`;
+    img.src = `${bgImage}?auto=format&fit=crop&w=1200&q=70`;
     img.onload = () => setImageLoaded(true);
     
     window.scrollTo(0, 0);
@@ -27,13 +30,14 @@ const ServiceLayout = ({ children, title, description, bgImage }: ServiceLayoutP
   return (
     <MainLayout>
       <div className="relative h-[50vh] bg-cover bg-center">
-        {/* Placeholder before image loads */}
-        <div className={`absolute inset-0 bg-gray-300 ${imageLoaded ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500`}></div>
+        {/* Placeholder before image loads - improved animation */}
+        <div className={`absolute inset-0 bg-gray-300 animate-pulse ${imageLoaded ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}></div>
         
-        {/* Background image - using optimized version */}
+        {/* Background image with optimized loading */}
         <div 
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-          style={{ backgroundImage: `url(${bgImage}?auto=format&w=1200&q=60)` }}
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+          style={{ backgroundImage: `url(${bgImage}?auto=format&fit=crop&w=1200&q=70)` }}
+          aria-hidden="true"
         ></div>
         
         <div className="absolute inset-0 bg-black/50" />
