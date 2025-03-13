@@ -11,14 +11,16 @@ import { Link } from 'react-router-dom';
 // Optimized image URLs with better quality parameters
 const images = [
   "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1280&q=80",
+
+  "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://images.unsplash.com/photo-1492724724894-7464c27d0ceb?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   "https://images.unsplash.com/photo-1493997181344-712f2f19d87a?auto=format&fit=crop&w=1280&q=80",
   "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1280&q=80",
-  "https://images.unsplash.com/photo-1601823984263-b87b59798b00?auto=format&fit=crop&w=1280&q=80",
   "https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1280&q=80",
   "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1280&q=80",
   "https://images.unsplash.com/photo-1467377791767-c929b5dc9a23?auto=format&fit=crop&w=1280&q=80",
   "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1280&q=80",
-  "https://images.unsplash.com/photo-1597998593641-5c27455adf87?auto=format&fit=crop&w=1280&q=80",
   "https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1280&q=80",
 ];
 
